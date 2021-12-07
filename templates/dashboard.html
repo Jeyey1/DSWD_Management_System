@@ -1,0 +1,116 @@
+{% extends 'base/base.html' %}
+
+
+
+{% block title %}Dashboard{% endblock title %}
+
+{% block content %}
+
+  <title>HTML Elements Reference</title>
+  <title>HTML Elements Reference</title>
+  <div>
+    <map>
+      <div>
+      <map name="beachmap">
+    <area href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" shape="rect" coords="20,180,65,190"
+      alt="bagalangit" title="Beach hut - where you get changed">
+      <div class="user-area dropdown float-right">
+                
+                <div class="user-menu dropdown-menu" style="background: skyblue">
+
+
+                    <a class="nav-link" href="{% url 'logout' %}"><i class="fa fa-power -off"></i>MABINI</a>
+                </div>
+            </div>
+
+      </div>
+    </map>
+  </div>
+     <p>
+       {% load static %} <img src="{% static "images/mabini.gif" %}" style="margin: 0 auto; width:350px; align-items: center" alt="home" usemap="#mabini" />
+     </p><br></br>
+     
+    <!-- Widgets  -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: blue">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-1">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count" style="color: white">{{ elder }}</span></div>
+                                <div class="stat-heading" style="color: white">Elder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: green">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-2">
+                            <i class="fa fa-list"></i>
+                        </div>
+                        <div class="stat-content" >
+                            <div class="text-left dib">
+                                <div class="stat-text" style="color: white"><span class="count">{{ Pwd }}</span></div>
+                                <div class="stat-heading" style="color: white">PWD </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: red">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-3">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count" style="color: white">{{ Youth }}</span></div>
+                                <div class="stat-heading" style="color: white">Out of School Youth</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: orchid">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-4">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count" style="color: white">{{ women }}</span></div>
+                                <div class="stat-heading" style
+                     ="color: white">Pregnant Women
+                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Widgets -->
+    
+    <div class="clearfix"></div>
+
+    <!-- Orders -->
+    
+    <!-- /.orders -->
+{% endblock content %}
